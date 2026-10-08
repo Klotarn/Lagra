@@ -1,16 +1,20 @@
 {
-    "nisse": {
-        "password": "apa",
-        "items": [
-            "luva",
-            "vante"
-        ]
-    },
-    "bosse": {
-        "password": "ko",
-        "items": [
-            "gräs",
-            "mjölk"
-        ]
-    }
+    "users": [
+        {
+            "username": "nisse",
+            "password": "apa",
+            "items": [
+                "luva",
+                "vante"
+            ]
+        },
+        {
+            "username": "bosse",
+            "password": "ko",
+            "items": [
+                "gräs",
+                "mjölk"
+            ]
+        }
+    ]
 }
