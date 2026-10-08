@@ -42,7 +42,12 @@ def login():
         return True
 
 
+def clear():
+    print("\033[2J\033[H", end="")
+
+
 def login_failed():
+    clear()
     global current_user
     print("Invalid username or password.")
     current_user = None
@@ -68,6 +73,7 @@ def login_failed():
 def logout():
     global current_user
     current_user = None
+    clear()
     print("Logged out.\n")
 
 
@@ -77,6 +83,7 @@ def quit():
 
 
 def welcome_user():
+    clear()
     print(f"Welcome, {current_user}!\n")
     list_items()
 
@@ -104,6 +111,7 @@ def select_user_action():
 
 
 def add_item():
+    clear()
     if current_user == None:
         print("No user is currently logged in.")
         return
@@ -111,6 +119,7 @@ def add_item():
     item = input("Enter the item to add (leave empty to not add any item): ").strip()
     print()
 
+    clear()
     if item == "":
         print("No item added.\n")
         return
@@ -129,6 +138,7 @@ def add_item():
 
 
 def remove_item():
+    clear()
     if current_user == None:
         print("No user is currently logged in.\n")
         return
@@ -155,6 +165,7 @@ def remove_item():
                 "Enter the index of the item to remove (leave empty to not remove any item): "
             ).strip()
 
+        clear()
         if item_idx_raw == "":
             print("No items removed.\n")
             return
@@ -169,6 +180,7 @@ def remove_item():
 
 
 def list_items():
+    clear()
     if current_user == None:
         print("No user is currently logged in.\n")
         return
@@ -253,4 +265,5 @@ def main():
                 select_user_action()
 
 
+clear()
 main()
