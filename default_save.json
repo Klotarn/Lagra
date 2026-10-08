@@ -1,0 +1,16 @@
+{
+    "nisse": {
+        "password": "apa",
+        "items": [
+            "luva",
+            "vante"
+        ]
+    },
+    "bosse": {
+        "password": "ko",
+        "items": [
+            "gräs",
+            "mjölk"
+        ]
+    }
+}
