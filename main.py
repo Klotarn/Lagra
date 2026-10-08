@@ -159,6 +159,7 @@ def remove_item():
 
         if item_idx_raw is "":
             print("No items removed.\n")
+            return
 
         item_idx = int(item_idx_raw) - 1
 
