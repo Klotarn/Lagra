@@ -6,8 +6,6 @@ data = {"users": []}
 
 current_user = None
 
-# data = crud.read_save_file()
-
 
 def welcome():
     print("Welcome to Lagra (TM)")
