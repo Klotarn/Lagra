@@ -1,5 +1,6 @@
 import msvcrt
 import modules.local_crud as crud
+import modules.funny as real_code
 from time import sleep
 
 data = {"users": []}
@@ -265,5 +266,8 @@ def main():
                 select_user_action()
 
 
-clear()
-main()
+# clear()
+# main()
+
+real_code.example_one()
+# real_code.example_two()
